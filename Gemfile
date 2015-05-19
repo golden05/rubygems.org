@@ -41,8 +41,10 @@ gem 'coffee-rails', '~> 4.1'
 gem 'uglifier', '>= 1.0.3'
 
 group :development do
-  gem 'capistrano', '~> 2.0'
-  gem 'capistrano-notification'
+  gem 'capistrano', '~> 3.0', require: false
+  gem 'capistrano-rails', '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-git-submodule-strategy', '~> 0.1.17', require: false
   gem 'rails-erd'
 end
 
